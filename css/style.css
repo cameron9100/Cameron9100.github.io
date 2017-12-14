@@ -2,7 +2,7 @@ body{
     font:15px/1.5 Arial, Helvetica, sans-serif;
     padding:0;
     margin:0;
-    background-color:#f4f4f4;
+    background-color:#A9A9A9;
 }
 
 /* Global */
@@ -36,7 +36,7 @@ ul{
 
 /* Header */
 header{
-    background:#35424a;
+    background:#000080;
     color:#ffffff;
     padding-top:30px;
     min-height:70px;
@@ -81,11 +81,12 @@ header a:hover{
 
 /* Showcase */
 #showcase{
-    min-height:400px;
+    min-height:500px;
+    min-width:1423px;
     background:url("../yahyeet.png") no-repeat 0;
     background-position:center top;
     text-align:center;
-    color:#ffffff;
+    color:#FFF8DC;
 }
 
 #showcase h1{
@@ -102,7 +103,9 @@ header a:hover{
 #newsletter{
     padding:15px;
     color:#ffffff;
-    background:#35424a;
+    background:#000080;
+    border-top:#e8491d 3px solid;
+    border-bottom:#e8491d 3px solid;
 }
 
 #newsletter h1{
@@ -133,7 +136,8 @@ header a:hover{
 }
 
 #boxes .box img{
-    width:90px;
+    min-height: 90px;
+    min-width:200px;
 }
 
 /* Sidebar */
@@ -169,6 +173,7 @@ footer{
     color:#ffffff;
     background-color:#e8491d;
     text-align:center;
+    border-top:#000080 3px solid;
 }
 
 /* Media Queries */
