@@ -41,6 +41,7 @@ header{
     padding-top:30px;
     min-height:70px;
     border-bottom:#e8491d 3px solid;
+    border-top:#e8491d 3px solid;
 }
 
 header a{
@@ -174,6 +175,7 @@ footer{
     background-color:#e8491d;
     text-align:center;
     border-top:#000080 3px solid;
+    border-bottom:#000080 3px solid;
 }
 
 /* Media Queries */
