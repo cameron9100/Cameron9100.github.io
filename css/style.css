@@ -215,9 +215,9 @@ footer{
 /* Buttons */
 .button1 {
     background-color: #4CAF50; /* Green */
-    border: none;
+    border-radius: 8px;
     color: white;
-    padding: 15px 32px;
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -227,8 +227,93 @@ footer{
 .button2 {
     background-color: #0000FF; /* Blue */
     border: none;
+    border-radius: 8px;
     color: white;
-    padding: 15px 32px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.button3 {
+    background-color: #9932CC; /* Orchid */
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.button4 {
+    background-color: #FFD700; /* Gold */
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.button5 {
+    background-color: #B22222; /* Maroon */
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.button6 {
+    background-color: #2F4F4F; /* Slate Grey */
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.button7 {
+    background-color: #CD5C5C; /* Indian Red */
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.button8 {
+    background-color: #48D1CC; /* Medium Turquiose */
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.button9 {
+    background-color: #DDA0DD; /* Plum */
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
