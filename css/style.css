@@ -84,7 +84,7 @@ header a:hover{
 #showcase{
     min-height:500px;
     min-width:1423px;
-    background:url("../yahyeet.png") no-repeat 0;
+    background: url('../yahyeet.png') no-repeat;
     background-position:center top;
     text-align:center;
     color:#FFF8DC;
@@ -99,6 +99,7 @@ header a:hover{
 #showcase p{
     font-size:20px;
 }
+
 
 /* Newsletter */
 #newsletter{
