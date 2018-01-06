@@ -24,12 +24,117 @@
         </div>
       </header>
       
-      <section id="showcase">
-         <div class="container">
-            <h1>2012 Western Conference Champions</h1>
-            <p>Oklahoma City has made a playoff appearance for 6 of the past 7 years, and one Finals appearance in the year 2012.</p>
+    <section id="showcase">
+    <head>
+        <title>Video Background</title>
+        
+        <style type="text/css">
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            .content-section {
+                width: 50%;
+                margin: 0 auto;
+                padding: 15% 0;
+            }
+            .content-section h1 {
+                text-transform: uppercase;
+                margin-bottom: 15px;
+            }
+            .content-section p {
+                font-size: 1.2em;
+                color: #333;
+            }
+            .video-section {
+                position: relative;
+                width: 100%;
+                max-height: 550px;
+                overflow: hidden;
+            }
+            #video-elem {
+                width: 100%;
+            }
+            .video-overlay {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background-color: rgba(255, 255, 255, 0.8);
+                opacity: 0;
+                transition: opacity 0.3s ease;
+            }
+            .video-overlay:hover {
+                opacity: 0.45;
+            }
+            .video-overlay h1 {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                text-transform: uppercase;
+                font-size: 3em;
+                color: #000;
+                text-align: center;
+            }
+            .main-content {
+                position: fixed;
+                bottom: 0;
+                background: rgba(0, 0, 0, 0,5);
+                color: #f1f1f1;
+                width: 100%;
+                padding: 20px;
+            }
+            #myBtn {
+                width: 100px;
+                font-size: 18px;
+                padding: 10px;
+                border: none;
+                background: #e8491d;
+                color: #fff;
+                cursor: pointer;
+                position: absolute;
+                bottom: 1620%;
+            }
+            #myBtn:hover {
+                background: #ddd;
+                color: blue;
+            }
+        </style>
+    
+    
+    </head>
+    <body>
+        <div class="video-section">
+            <video id="video-elem" preload="auto" autoplay="true" loop="true" muted="muted">
+                <source src="okcvid.mp4" type="video/mp4">
+                video not supported
+            </video>
+            <div class="video-overlay">
+                <h1>Official Fan Page of the Oklahoma City Thunder</h1>
+            </div>
+            <div class="main-content">
+                <button id="myBtn" onclick="myFunction()">Pause</button>
+            </div>
         </div>
-      </section>
+    </body>
+    <script>
+    var video = document.getElementById("video-elem");
+    var btn = document.getElementById("myBtn");
+    function myFunction() {
+        if (video.paused) {
+            video.play();
+            btn.innerHTML = "Pause";
+        } else {
+            video.pause();
+            btn.innerHTML = "Play";
+        }
+    }
+    </script>
+    </div>
+    
+    </section>
       
       <section id="newsletter">
         <div class="container">
