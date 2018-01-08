@@ -6,6 +6,7 @@
         <meta name="author" content="Cameron Usher">
         <title>Oklahoma City Thunder | Welcome</title>
         <link rel="stylesheet" href="./css/style.css" href="./img">
+        <link rel="shortcut icon" type="image/x-icon" href="cutout.png" />
     </head>
     <body>
       <header>
@@ -119,25 +120,25 @@
             </div>
         </div>
     </body>
-    <script>
-    var video = document.getElementById("video-elem");
-    var btn = document.getElementById("myBtn");
-    function myFunction() {
-        if (video.paused) {
-            video.play();
-            btn.innerHTML = "Pause";
-        } else {
-            video.pause();
-            btn.innerHTML = "Play";
-        }
-    }
-    </script>
     </div>
     
     </section>
       
       <section id="newsletter">
         <div class="container">
+            <script>
+            var video = document.getElementById("video-elem");
+            var btn = document.getElementById("myBtn");
+            function myFunction() {
+                if (video.paused) {
+                    video.play();
+                    btn.innerHTML = "Pause";
+                } else {
+                    video.pause();
+                    btn.innerHTML = "Play";
+                }
+            }
+            </script>
             <h1>Subscribe to the Thunder Newsletter!</h1>
             <form>
                 <input type="email" placeholder="Enter Email..." />
