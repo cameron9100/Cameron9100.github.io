@@ -198,6 +198,23 @@ footer{
 }
 
 /* Buttons */
+#myBtn {
+    width: 100px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #e8491d;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    bottom: 1620%;
+}
+
+#myBtn:hover {
+    background: #ddd;
+    color: blue;
+}
+
 .button1 {
     background-color: #4CAF50; /* Green */
     border-radius: 8px;

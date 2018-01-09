@@ -87,28 +87,13 @@
                 width: 100%;
                 padding: 20px;
             }
-            #myBtn {
-                width: 100px;
-                font-size: 18px;
-                padding: 10px;
-                border: none;
-                background: #e8491d;
-                color: #fff;
-                cursor: pointer;
-                position: absolute;
-                bottom: 1620%;
-            }
-            #myBtn:hover {
-                background: #ddd;
-                color: blue;
-            }
         </style>
     
     
     </head>
     <body>
         <div class="video-section">
-            <video id="video-elem" preload="auto" autoplay="true" loop="true" muted="muted">
+            <video id="video-elem" preload="auto" autoplay="true" loop="true">
                 <source src="okcvid.mp4" type="video/mp4">
                 video not supported
             </video>
@@ -125,20 +110,20 @@
     </section>
       
       <section id="newsletter">
-        <div class="container">
             <script>
-            var video = document.getElementById("video-elem");
-            var btn = document.getElementById("myBtn");
-            function myFunction() {
-                if (video.paused) {
-                    video.play();
-                    btn.innerHTML = "Pause";
-                } else {
-                    video.pause();
-                    btn.innerHTML = "Play";
+                var video = document.getElementById("video-elem");
+                var btn = document.getElementById("myBtn");
+                function myFunction() {
+                    if (video.paused) {
+                        video.play();
+                        btn.innerHTML = "Pause";
+                    } else {
+                        video.pause();
+                        btn.innerHTML = "Play";
+                    }
                 }
-            }
             </script>
+        <div class="container">
             <h1>Subscribe to the Thunder Newsletter!</h1>
             <form>
                 <input type="email" placeholder="Enter Email..." />
@@ -152,7 +137,7 @@
               <div class="box">
                   <h3>Coaching Staff</h3>
                   <p class="dark">Billy Donovan - Head Coach | Adrian Griffin - Assistant Coach | Maurice Cheeks - Assistant Coach | Sam Presti - GM</p>
-                  <a href="http://www.nba.com/thunder/team/coaches"><img src="./west.jpg" title="Russell Westbrook (left) and Billy Donovan (right)" width="200" height="150" align="center"></a>
+                  <a href="http://www.nba.com/thunder/team/coaches"><img src="./img/west.jpg" title="Russell Westbrook (left) and Billy Donovan (right)" width="200" height="150" align="center"></a>
                   <p><font size="1">Click the image to learn more about the Oklahoma City Thunder's coaching staff.</font></p>
               </div>
               <div class="box">
@@ -161,13 +146,13 @@
                   <p>Rumble the Bison is the face of the Oklahoma City Thunder. Introduced on February 17, 2009, Rumble's name comes from the sound thunder makes. On August 13, 2009, Rumble was awarded the NBA's Mascot of the Year Award due to his tremendous interactions with fans. You can see him in action giving people high-fives, hugs, and team oriented t-shirts.   </p>
                   </li>
                   </ul>
-                  <a href="http://www.nba.com/thunder/rumble"><img src="./mascot.jpg" title="Rumble the Bison" width="200" height="200" align="center"></a>
+                  <a href="http://www.nba.com/thunder/rumble"><img src="./img/mascot.jpg" title="Rumble the Bison" width="200" height="200" align="center"></a>
                   <p><font size="1">Check out the other high-flying activities Rumble does by clicking on him!</font></p>
               </div>
               <div class="box">
                   <h3>Contact Information</h3>
                   <p class="dark">Chesapeake Energy Arena:100 W. Reno Ave. Oklahoma City, OK 73102 |(405) 602-8500| Office Hours: Monday-Friday 8 a.m - 5 p.m</p>
-                  <a href="https://www.chesapeakearena.com/teams/detail/the-thunder"><img src="./arena.jpg" title="Chesapeake Energy Arena" width="300" height="150" align="center"></a>
+                  <a href="https://www.chesapeakearena.com/teams/detail/the-thunder"><img src="./img/arena.jpg" title="Chesapeake Energy Arena" width="300" height="150" align="center"></a>
                   <p><font size="1">Want to buy tickets for upcoming Thunder home games? Click the arena to learn more!</font></p>
               </div>
           </div>
