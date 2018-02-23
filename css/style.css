@@ -401,3 +401,20 @@ footer{
     background: #ddd;
     color: #87CEFA;
 }
+
+.button12 {
+    background-color: #DEB877; /* Brown */
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.button12:hover {
+    background: #ddd;
+    color: #A52A2A;
+}
