@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>FlappyRussell Demo</title>
+<script type="text/javascript" src="./js/Processing.js"></script>
+</head>
+
+<body>
+<script type="text/processing">
+PImage back;
+PImage face;
+
+int count = 0;
+int y = 0;
+int Vy = 0;
+int gamestate = 0;
+
+void setup(){
+  size(1600, 900);
+  back = loadImage("./img/background.jpg");
+  face = loadImage("./img/russell.png");
+  //image(back, 0, 0);
+}
+
+void draw(){
+  if (gamestate == 0){
+    image(back, count, 0);
+    image(back, width + count, 0);
+    count -= 2;
+  }
+    if (count ==  - width){
+      count = 0;
+    }
+    image(face, 100, y);
+    //ellipse(100, y, 40, 40);
+    
+    if (count%2 == 0){
+      Vy += 1;
+    }
+    y = y + Vy; 
+    
+    if (y < -40 || y > 900){
+      gamestate = 1;
+    }
+  if (gamestate == 1){
+    background(0, 0, 0);
+    textSize(50);
+    fill(255); //black
+    rect(190, 260, 250, 50, 5);
+    fill(0); //white
+    text("Restart!", 220, 300);
+    if (mouseX > 190 && mouseX < 390 && mouseY > 260 && mouseY < 310){
+      if (mousePressed){y = 200;
+      y = 350;
+      gamestate = 0;}
+    }
+  }
+}
+void mousePressed(){
+  Vy = -20;
+}
+</script>
+<canvas id="sketch" style="border: 1px solid black;"></canvas>
+</body>
+</html>
