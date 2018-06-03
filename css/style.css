@@ -418,3 +418,20 @@ footer{
     background: #ddd;
     color: #A52A2A;
 }
+
+.button13 {
+    background-color: #000000; /* Slate Grey */
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.button13:hover {
+    background: #ddd;
+    color: ##2F4F4F;
+}
